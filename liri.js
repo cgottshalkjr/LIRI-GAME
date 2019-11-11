@@ -11,29 +11,31 @@ var inquirer = require("inquirer");
 var userCommand = process.argv[2];
 var userRequest = process.argv.slice(3).join(" ");
 
-// console.log(userCommand + userRequest);
 
-switch (userCommand) {
 
-    case "movie-this":
-        movieFunction(userRequest);
-        break;
+function runGame(userCommand, userRequest) {
+    switch (userCommand) {
 
-    case "concert-this":
-        concertFunction(userRequest);
-        break;
+        case "movie-this":
+            movieFunction(userRequest);
+            break;
 
-    case "spotify-this-song":
-        spotifyFunction(userRequest);
-        break;
+        case "concert-this":
+            concertFunction(userRequest);
+            break;
 
-    case "do-what-it-says":
-        doWhatFunction(userRequest);
-        break;
+        case "spotify-this-song":
+            spotifyFunction(userRequest);
+            break;
 
-    default:
-        console.log("Enter a valid search command")
+        case "do-what-it-says":
+            doWhatFunction(userRequest);
+            break;
 
+        default:
+            console.log("Enter a valid search command")
+
+    }
 }
 
 //Creating movie-this function
@@ -135,6 +137,21 @@ function spotifyFunction(songTitle) {
     });
 };
 
+function doWhatFunction() {
+
+    fs.readFile('random.txt', 'utf8', function (err, response) {
+        if (err) {
+            return console.log(err);
+        }
+        var newArr = response.split(',');
+        runGame(newArr[0], newArr[1]);
+        console.log("==================================================")
+        console.log("I ASK YOU SHELBY AND/OR KATHRYN?!?! WHO DID?!?!??")
+        console.log("==================================================")
+    });
+}
+
+runGame(userCommand, userRequest);
 
 
 // function rulesFunction() {
