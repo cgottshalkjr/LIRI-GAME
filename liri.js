@@ -6,6 +6,7 @@ var fs = require("fs");
 var moment = require("moment");
 var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
+var inquirer = require("inquirer");
 
 var userCommand = process.argv[2];
 var userRequest = process.argv.slice(3).join(" ");
@@ -22,9 +23,20 @@ switch (userCommand) {
         concertFunction(userRequest);
         break;
 
+    case "spotify-this-song":
+        spotifyFunction(userRequest);
+        break;
+
+    case "do-what-it-says":
+        doWhatFunction(userRequest);
+        break;
+
+    default:
+        console.log("Enter a valid search command")
+
 }
 
-
+//Creating movie-this function
 function movieFunction(movieTitle) {
 
     //If a movie title is not entered we give it something to return automatically
@@ -69,31 +81,68 @@ function movieFunction(movieTitle) {
             console.log(error.config);
         })
 
-        fs.appendFile("log.txt", )
+    // fs.appendFile("log.txt")
 }
 //End of movieFunction
 
+//Creating concert-this funciton
 function concertFunction(artistSearch) {
 
     if (!artistSearch) {
         artistSearch = "Durand Jones"
     }
 
- 
     var queryUrl = "https://rest.bandsintown.com/artists/" + artistSearch + "/events?app_id=codingbootcamp"
 
     axios.get(queryUrl)
-    .then(function (response) {
-            
-        for (var i = 0; i < response.data.length; i++){
-
-        console.log("---------------------------------------");
-        console.log("Venue: " + response.data[i].venue.name);
-        console.log("City: " + response.data[i].venue.city);
-        console.log("When: " + moment(response.data[i].datetime).format("MM/DD/YYYY"));
-        console.log("---------------------------------------");
-
-        }
-    })
+        .then(function (response) {
+            if (response.data.length > 0) {
+                for (var i = 0; i < response.data.length; i++) {
+                    console.log("---------------------------------------");
+                    console.log("Venue: " + response.data[i].venue.name);
+                    console.log("City: " + response.data[i].venue.city);
+                    console.log("When: " + moment(response.data[i].datetime).format("MM/DD/YYYY"));
+                    console.log("---------------------------------------");
+                }
+            }
+            else {
+                console.log("No shows coming up")
+            }
+        })
 }
 //End of concertFunction
+
+function spotifyFunction(songTitle) {
+
+    if (!songTitle) {
+        songTitle = "PPAP"
+    }
+
+    spotify.search({ type: 'track', query: songTitle }, function (err, response) {
+        if (err) {
+            return console.log('Error occurred: ' + err);
+        }
+
+        for (var i = 0; i < response.tracks.items.length; i++) {
+            console.log("-------------------------------------")
+            console.log("Artist: " + response.tracks.items[i].artists[0].name);
+            console.log("-------------------------------------")
+            console.log("Song: " + response.tracks.items[i].name);
+            console.log("URL: " + response.tracks.items[i].preview_url);
+            console.log("Album: " + response.tracks.items[i].album.name);
+            console.log("======================================")
+        }
+    });
+};
+
+
+
+// function rulesFunction() {
+//     console.log("-------------------------------------")
+//     console.log("Rules")
+//     console.log("-------------------------------------")
+//     console.log("Type 1 of 4 things:\n" + "*movie-this\n" + "*concert-this\n" + "*spotify-this-song\n" + "*do-what-it-says\n" + "After you type in one of the commands, enter a search term and hit enter");
+//     console.log("=====================================")
+// }
+
+
