@@ -18,12 +18,17 @@ switch (userCommand) {
         movieFunction(userRequest);
         break;
 
+    case "concert-this":
+        concertFunction(userRequest);
+        break;
+
 }
 
 
 function movieFunction(movieTitle) {
 
-    if(!movieTitle) {
+    //If a movie title is not entered we give it something to return automatically
+    if (!movieTitle) {
         movieTitle = "The Passion Of Joan Of Arc"
     }
 
@@ -44,6 +49,51 @@ function movieFunction(movieTitle) {
             console.log("||||||Country: " + response.data.Country);
             console.log("||||||Language: " + response.data.Language)
             console.log("===========================================");
-        });
-}
+        })
+        .catch(function (error) {
+            if (error.response) {
 
+                console.log("---------------Data---------------");
+                console.log(error.response.data);
+                console.log("---------------Status---------------");
+                console.log(error.response.status);
+                console.log("---------------Status---------------");
+                console.log(error.response.headers);
+            } else if (error.request) {
+
+                console.log(error.request);
+            } else {
+
+                console.log("Error", error.message);
+            }
+            console.log(error.config);
+        })
+
+        fs.appendFile("log.txt", )
+}
+//End of movieFunction
+
+function concertFunction(artistSearch) {
+
+    if (!artistSearch) {
+        artistSearch = "Durand Jones"
+    }
+
+ 
+    var queryUrl = "https://rest.bandsintown.com/artists/" + artistSearch + "/events?app_id=codingbootcamp"
+
+    axios.get(queryUrl)
+    .then(function (response) {
+            
+        for (var i = 0; i < response.data.length; i++){
+
+        console.log("---------------------------------------");
+        console.log("Venue: " + response.data[i].venue.name);
+        console.log("City: " + response.data[i].venue.city);
+        console.log("When: " + moment(response.data[i].datetime).format("MM/DD/YYYY"));
+        console.log("---------------------------------------");
+
+        }
+    })
+}
+//End of concertFunction
