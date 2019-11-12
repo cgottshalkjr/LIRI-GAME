@@ -636,3 +636,550 @@ Song: Marry Me
 URL: null
 Album: Life Changes
 ======================================
+-------------------------------------
+Title: The Godfather
+-------------------------------------
+Directed By: Francis Ford Coppola
+Starring: Marlon Brando, Al Pacino, James Caan, Richard S. Castellano
+Release Year: 1972
+||||||IMDb: 9.2/10
+||||||MetaCritic: 100/100
+||||||Plot: The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.
+||||||Country: USA
+||||||Language: English, Italian, Latin
+======================================
+-------------------------------------
+Title: The Passion of Joan of Arc
+-------------------------------------
+Directed By: Carl Theodor Dreyer
+Starring: Maria Falconetti, Eugene Silvain, André Berley, Maurice Schutz
+Release Year: 1928
+||||||IMDb: 8.2/10
+||||||Plot: In 1431, Jeanne d'Arc is placed on trial on charges of heresy. The ecclesiastical jurists attempt to force Jeanne to recant her claims of holy visions.
+||||||Country: France
+||||||Language: French
+======================================
+-------------------------------------
+Title: They Live by Night
+-------------------------------------
+Directed By: Nicholas Ray
+Starring: Cathy O'Donnell, Farley Granger, Howard Da Silva, Jay C. Flippen
+Release Year: 1948
+||||||IMDb: 7.5/10
+||||||Plot: An escaped convict, injured during a robbery, falls in love with the woman who nurses him back to health, but their relationship seems doomed from the beginning.
+||||||Country: USA
+||||||Language: English
+======================================
+-------------------------------------
+Title: Rashomon
+-------------------------------------
+Directed By: Akira Kurosawa
+Starring: Toshirô Mifune, Machiko Kyô, Masayuki Mori, Takashi Shimura
+Release Year: 1950
+||||||IMDb: 8.2/10
+||||||Plot: The rape of a bride and the murder of her samurai husband are recalled from the perspectives of a bandit, the bride, the samurai's ghost and a woodcutter.
+||||||Country: Japan
+||||||Language: Japanese
+======================================
+-------------------------------------
+Venue: The Glass House
+-------------------------------------
+City: Pomona, CA
+When: Tuesday, November 12, 2019 8:00 PM
+======================================
+-------------------------------------
+Venue: Mohawk
+-------------------------------------
+City: Austin, TX
+When: Sunday, November 17, 2019 6:30 PM
+======================================
+-------------------------------------
+Venue: The Masquerade - Heaven
+-------------------------------------
+City: Atlanta, GA
+When: Tuesday, November 19, 2019 7:00 PM
+======================================
+-------------------------------------
+Venue: The Underground
+-------------------------------------
+City: Charlotte, NC
+When: Wednesday, November 20, 2019 8:00 PM
+======================================
+-------------------------------------
+Venue: The Beacham
+-------------------------------------
+City: Orlando, FL
+When: Saturday, November 23, 2019 6:00 PM
+======================================
+-------------------------------------
+Venue: Club Red
+-------------------------------------
+City: Mesa, AZ
+When: Wednesday, November 13, 2019 8:00 PM
+======================================
+-------------------------------------
+Venue: Franklin Music Hall
+-------------------------------------
+City: Philadelphia, PA
+When: Friday, November 29, 2019 8:30 PM
+======================================
+-------------------------------------
+Venue: Roxian Theatre
+-------------------------------------
+City: Mckees Rocks, PA
+When: Saturday, November 30, 2019 8:00 PM
+======================================
+-------------------------------------
+Venue: Phoenix Concert Theatre
+-------------------------------------
+City: Toronto, Canada
+When: Sunday, December 1, 2019 7:00 PM
+======================================
+-------------------------------------
+Venue: The Broadberry
+-------------------------------------
+City: Richmond, VA
+When: Tuesday, December 3, 2019 8:00 PM
+======================================
+-------------------------------------
+Venue: Black Cat
+-------------------------------------
+City: Washington, DC
+When: Wednesday, December 4, 2019 7:00 PM
+======================================
+-------------------------------------
+Venue: Warsaw
+-------------------------------------
+City: Brooklyn, NY
+When: Thursday, December 5, 2019 8:00 PM
+======================================
+-------------------------------------
+Venue: Warsaw
+-------------------------------------
+City: Brooklyn, NY
+When: Friday, December 6, 2019 8:00 PM
+======================================
+-------------------------------------
+Venue: House Of Blues Boston
+-------------------------------------
+City: Boston, MA
+When: Saturday, December 7, 2019 7:00 PM
+======================================
+-------------------------------------
+Venue: Paper Tiger
+-------------------------------------
+City: San Antonio, TX
+When: Saturday, November 16, 2019 8:00 PM
+======================================
+-------------------------------------
+Venue: The Basement East
+-------------------------------------
+City: Nashville, TN
+When: Tuesday, November 26, 2019 8:00 PM
+======================================
+-------------------------------------
+Venue: Trees
+-------------------------------------
+City: Dallas, TX
+When: Friday, November 15, 2019 8:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: The Glass House
+-------------------------------------
+City: Pomona, CA
+When: Tuesday, November 12, 2019 8:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: Club Red
+-------------------------------------
+City: Mesa, AZ
+When: Wednesday, November 13, 2019 8:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: The Masquerade - Heaven
+-------------------------------------
+City: Atlanta, GA
+When: Tuesday, November 19, 2019 7:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: The Underground
+-------------------------------------
+City: Charlotte, NC
+When: Wednesday, November 20, 2019 8:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: The Beacham
+-------------------------------------
+City: Orlando, FL
+When: Saturday, November 23, 2019 6:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: The Basement East
+-------------------------------------
+City: Nashville, TN
+When: Tuesday, November 26, 2019 8:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: Franklin Music Hall
+-------------------------------------
+City: Philadelphia, PA
+When: Friday, November 29, 2019 8:30 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: Roxian Theatre
+-------------------------------------
+City: Mckees Rocks, PA
+When: Saturday, November 30, 2019 8:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: Phoenix Concert Theatre
+-------------------------------------
+City: Toronto, Canada
+When: Sunday, December 1, 2019 7:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: The Broadberry
+-------------------------------------
+City: Richmond, VA
+When: Tuesday, December 3, 2019 8:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: Black Cat
+-------------------------------------
+City: Washington, DC
+When: Wednesday, December 4, 2019 7:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: Warsaw
+-------------------------------------
+City: Brooklyn, NY
+When: Thursday, December 5, 2019 8:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: Warsaw
+-------------------------------------
+City: Brooklyn, NY
+When: Friday, December 6, 2019 8:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: House Of Blues Boston
+-------------------------------------
+City: Boston, MA
+When: Saturday, December 7, 2019 7:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: Trees
+-------------------------------------
+City: Dallas, TX
+When: Friday, November 15, 2019 8:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: Paper Tiger
+-------------------------------------
+City: San Antonio, TX
+When: Saturday, November 16, 2019 8:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: Mohawk
+-------------------------------------
+City: Austin, TX
+When: Sunday, November 17, 2019 6:30 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: The Glass House
+-------------------------------------
+City: Pomona, CA
+When: Tuesday, November 12, 2019 8:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: Mohawk
+-------------------------------------
+City: Austin, TX
+When: Sunday, November 17, 2019 6:30 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: The Masquerade - Heaven
+-------------------------------------
+City: Atlanta, GA
+When: Tuesday, November 19, 2019 7:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: The Underground
+-------------------------------------
+City: Charlotte, NC
+When: Wednesday, November 20, 2019 8:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: The Beacham
+-------------------------------------
+City: Orlando, FL
+When: Saturday, November 23, 2019 6:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: The Basement East
+-------------------------------------
+City: Nashville, TN
+When: Tuesday, November 26, 2019 8:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: Franklin Music Hall
+-------------------------------------
+City: Philadelphia, PA
+When: Friday, November 29, 2019 8:30 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: Roxian Theatre
+-------------------------------------
+City: Mckees Rocks, PA
+When: Saturday, November 30, 2019 8:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: Phoenix Concert Theatre
+-------------------------------------
+City: Toronto, Canada
+When: Sunday, December 1, 2019 7:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: The Broadberry
+-------------------------------------
+City: Richmond, VA
+When: Tuesday, December 3, 2019 8:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: Black Cat
+-------------------------------------
+City: Washington, DC
+When: Wednesday, December 4, 2019 7:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: Warsaw
+-------------------------------------
+City: Brooklyn, NY
+When: Thursday, December 5, 2019 8:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: Warsaw
+-------------------------------------
+City: Brooklyn, NY
+When: Friday, December 6, 2019 8:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: House Of Blues Boston
+-------------------------------------
+City: Boston, MA
+When: Saturday, December 7, 2019 7:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: Trees
+-------------------------------------
+City: Dallas, TX
+When: Friday, November 15, 2019 8:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: Paper Tiger
+-------------------------------------
+City: San Antonio, TX
+When: Saturday, November 16, 2019 8:00 PM
+======================================
+------------------*EVENTS*---------------------
+Venue: Club Red
+-------------------------------------
+City: Mesa, AZ
+When: Wednesday, November 13, 2019 8:00 PM
+======================================
+****************MUSIC****************
+-------------------------------------
+Artist: XXXTENTACION
+-------------------------------------
+Song: changes
+URL: null
+Album: ?
+======================================
+****************MUSIC****************
+-------------------------------------
+Artist: Thomas Rhett
+-------------------------------------
+Song: Unforgettable
+URL: null
+Album: Life Changes
+======================================
+****************MUSIC****************
+-------------------------------------
+Artist: Thundercat
+-------------------------------------
+Song: Them Changes
+URL: https://p.scdn.co/mp3-preview/229c1c2768918b64eebd057689349528b4c394a0?cid=0faf1960f2b646ce8011f27bee05843b
+Album: Drunk
+======================================
+****************MUSIC****************
+-------------------------------------
+Artist: 2Pac
+-------------------------------------
+Song: Changes
+URL: null
+Album: Greatest Hits
+======================================
+****************MUSIC****************
+-------------------------------------
+Artist: Thomas Rhett
+-------------------------------------
+Song: Sixteen
+URL: null
+Album: Life Changes
+======================================
+****************MUSIC****************
+-------------------------------------
+Artist: Thomas Rhett
+-------------------------------------
+Song: Life Changes
+URL: null
+Album: Life Changes (Big Machine Radio Release Special)
+======================================
+****************MUSIC****************
+-------------------------------------
+Artist: H.E.R.
+-------------------------------------
+Song: Changes
+URL: https://p.scdn.co/mp3-preview/cd977815d780144e516ae87fe937a6e18376eb8b?cid=0faf1960f2b646ce8011f27bee05843b
+Album: H.E.R.
+======================================
+****************MUSIC****************
+-------------------------------------
+Artist: One Direction
+-------------------------------------
+Song: Night Changes
+URL: https://p.scdn.co/mp3-preview/c79b330f42df9569657670bb0ff072792a455bc4?cid=0faf1960f2b646ce8011f27bee05843b
+Album: FOUR (Deluxe)
+======================================
+****************MUSIC****************
+-------------------------------------
+Artist: Thomas Rhett
+-------------------------------------
+Song: Marry Me
+URL: null
+Album: Life Changes
+======================================
+****************MUSIC****************
+-------------------------------------
+Artist: Thomas Rhett
+-------------------------------------
+Song: Life Changes
+URL: null
+Album: Life Changes
+======================================
+-------------*MOVIE--INFO*-------------
+-------------------------------------
+Title: The Passion of Joan of Arc
+-------------------------------------
+Directed By: Carl Theodor Dreyer
+Starring: Maria Falconetti, Eugene Silvain, André Berley, Maurice Schutz
+Release Year: 1928
+||||||IMDb: 8.2/10
+||||||Plot: In 1431, Jeanne d'Arc is placed on trial on charges of heresy. The ecclesiastical jurists attempt to force Jeanne to recant her claims of holy visions.
+||||||Country: France
+||||||Language: French
+======================================
+-------------*MOVIE--INFO*-------------
+-------------------------------------
+Title: Rashomon
+-------------------------------------
+Directed By: Akira Kurosawa
+Starring: Toshirô Mifune, Machiko Kyô, Masayuki Mori, Takashi Shimura
+Release Year: 1950
+||||||IMDb: 8.2/10
+||||||Plot: The rape of a bride and the murder of her samurai husband are recalled from the perspectives of a bandit, the bride, the samurai's ghost and a woodcutter.
+||||||Country: Japan
+||||||Language: Japanese
+======================================
+-------------*MOVIE--INFO*-------------
+-------------------------------------
+Title: Stalker
+-------------------------------------
+Directed By: Andrei Tarkovsky
+Starring: Alisa Freyndlikh, Aleksandr Kaydanovskiy, Anatoliy Solonitsyn, Nikolay Grinko
+Release Year: 1979
+||||||IMDb: 8.2/10
+||||||Plot: A guide leads two men through an area known as the Zone to find a room that grants wishes.
+||||||Country: Soviet Union
+||||||Language: Russian
+======================================
+****************MUSIC****************
+-------------------------------------
+Artist: Baha Men
+-------------------------------------
+Song: Who Let The Dogs Out
+URL: null
+Album: Who Let The Dogs Out
+======================================
+****************MUSIC****************
+-------------------------------------
+Artist: Our Last Night
+-------------------------------------
+Song: Who Let the Dogs Out
+URL: https://p.scdn.co/mp3-preview/684610bd7f9eaefcbc625b74a064f00b8274b327?cid=0faf1960f2b646ce8011f27bee05843b
+Album: Who Let the Dogs Out
+======================================
+****************MUSIC****************
+-------------------------------------
+Artist: Kidz Bop Kids
+-------------------------------------
+Song: Who Let The Dogs Out
+URL: null
+Album: Kidz Bop Party Pop
+======================================
+****************MUSIC****************
+-------------------------------------
+Artist: Baha Men
+-------------------------------------
+Song: You All Dat
+URL: null
+Album: Who Let The Dogs Out
+======================================
+****************MUSIC****************
+-------------------------------------
+Artist: The Party Cats
+-------------------------------------
+Song: Who Let The Dogs Out
+URL: null
+Album: Kids Dance Party
+======================================
+****************MUSIC****************
+-------------------------------------
+Artist: Baha Men
+-------------------------------------
+Song: Get Ya Party On
+URL: null
+Album: Who Let The Dogs Out
+======================================
+****************MUSIC****************
+-------------------------------------
+Artist: The Hit Crew Kids
+-------------------------------------
+Song: Who Let the Dogs Out
+URL: https://p.scdn.co/mp3-preview/30504a8fb2e11a37e89319fc397d39394a4194a9?cid=0faf1960f2b646ce8011f27bee05843b
+Album: Kids Halloween Party Music
+======================================
+****************MUSIC****************
+-------------------------------------
+Artist: Baha Men
+-------------------------------------
+Song: Who Let The Dogs Out
+URL: null
+Album: Who Let The Dogs Out
+======================================
+****************MUSIC****************
+-------------------------------------
+Artist: The Cool Kidzz
+-------------------------------------
+Song: Who Let the Dogs Out?
+URL: https://p.scdn.co/mp3-preview/4dd6b5bc254e01b1d3dfe045e1ca011a8e6ab6f2?cid=0faf1960f2b646ce8011f27bee05843b
+Album: Novelty Party Fun Songs
+======================================
+****************MUSIC****************
+-------------------------------------
+Artist: Kidz Bop Kids
+-------------------------------------
+Song: Who Let The Dogs Out
+URL: null
+Album: Kidz Bop Party Hits
+======================================
