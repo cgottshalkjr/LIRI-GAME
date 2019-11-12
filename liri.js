@@ -12,7 +12,6 @@ var userCommand = process.argv[2];
 var userRequest = process.argv.slice(3).join(" ");
 
 
-
 function runGame(userCommand, userRequest) {
     switch (userCommand) {
 
@@ -38,11 +37,13 @@ function runGame(userCommand, userRequest) {
     }
 }
 
+//Function for handling errors with Rotten Tomatoes score
 function getRotten(tomatoes) {
     if (tomatoes.Source === "Rotten Tomatoes") {
-        console.log("Rotten Tomatoes Rating: ", tomatoes.Value)
+        console.log("||||||Rotten: ", tomatoes.Value)
     }
 }
+
 //Creating movie-this function
 function movieFunction(movieTitle) {
 
@@ -53,8 +54,6 @@ function movieFunction(movieTitle) {
 
     var queryUrl = "http://www.omdbapi.com/?t=" + movieTitle + "&y=&plot=short&apikey=trilogy";
 
-    // console.log(queryUrl);
-
     axios.get(queryUrl)
         .then(function (response) {
             console.log("---------------------------------------");
@@ -64,11 +63,28 @@ function movieFunction(movieTitle) {
             console.log("||||||Starring: " + response.data.Actors);
             console.log("||||||Release Year: " + response.data.Year);
             response.data.Ratings.map(getRotten);
-            // console.log("||||||Ratings: " + "IMDb: " + response.data.Ratings[0].Value + " |" + "Rotten: " + response.data.Ratings.map(getRotten) + " |" + "MetaCritic: " + response.data.Ratings[2].Value);
+            console.log("||||||IMDb: " + response.data.Ratings[0].Value);
+            console.log("||||||MetaCritic: " + response.data.Ratings[2].Value);
             console.log("||||||Plot: " + response.data.Plot);
             console.log("||||||Country: " + response.data.Country);
             console.log("||||||Language: " + response.data.Language)
             console.log("===========================================");
+
+            var logText = "-------------------------------------\n" +
+                "Title: " + response.data.Title + "\n" +
+                "-------------------------------------\n" +
+                "Directed By: " + response.data.Director + "\n" +
+                "Starring: " + response.data.Actors + "\n" +
+                "Release Year: " + response.data.Year + "\n" +
+                "||||||IMDb: " + response.data.Ratings[0].Value + "\n" + "||||||MetaCritic: " + response.data.Ratings[2].Value + "\n" + "||||||Plot: " + response.data.Plot + "\n" + "||||||Country: " + response.data.Country + "\n" + "||||||Language: " + response.data.Language + "\n"
+                + "======================================\n"
+
+            fs.appendFile("log.txt", logText, function (err) {
+                if (err) {
+                    return console.log('Error occurred: ' + err);
+                }
+
+            });
         })
         .catch(function (error) {
             if (error.response) {
@@ -89,7 +105,7 @@ function movieFunction(movieTitle) {
             console.log(error.config);
         })
 
-    // fs.appendFile("log.txt")
+
 }
 //End of movieFunction
 
@@ -111,6 +127,20 @@ function concertFunction(artistSearch) {
                     console.log("City: " + response.data[i].venue.city + ", " + (response.data[i].venue.region || response.data[i].venue.country));
                     console.log("When: " + moment(response.data[i].datetime).format("LLLL"));
                     console.log("---------------------------------------");
+
+                    var logText = "-------------------------------------\n" +
+                        "Venue: " + response.data[i].venue.name + "\n" +
+                        "-------------------------------------\n" +
+                        "City: " + response.data[i].venue.city + ", " + (response.data[i].venue.region || response.data[i].venue.country) + "\n" +
+                        "When: " + moment(response.data[i].datetime).format("LLLL") + "\n"
+                        + "======================================\n"
+
+                    fs.appendFile("log.txt", logText, function (err) {
+                        if (err) {
+                            return console.log('Error occurred: ' + err);
+                        }
+
+                    });
                 }
             }
             else {
@@ -137,9 +167,10 @@ function spotifyFunction(songTitle) {
             console.log("Artist: " + response.tracks.items[i].artists[0].name);
             console.log("-------------------------------------")
             console.log("Song: " + response.tracks.items[i].name);
-            console.log("URL: " + response.tracks.items[i].preview_url);
+            console.log("URL: " + response.tracks.items[i].preview_url || "NO PREVIEW FOR YOU!!!");
             console.log("Album: " + response.tracks.items[i].album.name);
             console.log("======================================");
+
 
             var logText = "-------------------------------------\n" +
                 "Artist: " + response.tracks.items[i].artists[0].name + "\n" +
@@ -150,7 +181,9 @@ function spotifyFunction(songTitle) {
                 + "======================================\n"
 
             fs.appendFile("log.txt", logText, function (err) {
-
+                if (err) {
+                    return console.log('Error occurred: ' + err);
+                }
 
             });
         }
@@ -162,26 +195,19 @@ function spotifyFunction(songTitle) {
 function doWhatFunction() {
 
     fs.readFile('random.txt', 'utf8', function (err, response) {
+
         if (err) {
             return console.log(err);
         }
+
         var newArr = response.split(',');
         runGame(newArr[0], newArr[1]);
         console.log("==================================================")
         console.log("I ASK YOU SHELBY AND/OR KATHRYN?!?! WHO DID?!?!??")
         console.log("==================================================")
+
     });
 }
 
 runGame(userCommand, userRequest);
-
-
-// function rulesFunction() {
-//     console.log("-------------------------------------")
-//     console.log("Rules")
-//     console.log("-------------------------------------")
-//     console.log("Type 1 of 4 things:\n" + "*movie-this\n" + "*concert-this\n" + "*spotify-this-song\n" + "*do-what-it-says\n" + "After you type in one of the commands, enter a search term and hit enter");
-//     console.log("=====================================")
-// }
-
 
