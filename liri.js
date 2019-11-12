@@ -29,7 +29,7 @@ function runGame(userCommand, userRequest) {
             break;
 
         case "do-what-it-says":
-            doWhatFunction(userRequest);
+            doWhatFunction();
             break;
 
         default:
@@ -38,6 +38,11 @@ function runGame(userCommand, userRequest) {
     }
 }
 
+function getRotten(tomatoes) {
+    if (tomatoes.Source === "Rotten Tomatoes") {
+        console.log("Rotten Tomatoes Rating: ", tomatoes.Value)
+    }
+}
 //Creating movie-this function
 function movieFunction(movieTitle) {
 
@@ -58,7 +63,8 @@ function movieFunction(movieTitle) {
             console.log("||||||Directed By: " + response.data.Director);
             console.log("||||||Starring: " + response.data.Actors);
             console.log("||||||Release Year: " + response.data.Year);
-            console.log("||||||Ratings: " + "IMDb: " + response.data.Ratings[0].Value + " |" + "Rotten: " + response.data.Ratings[1].Value + " |" + "MetaCritic: " + response.data.Ratings[2].Value);
+            response.data.Ratings.map(getRotten);
+            // console.log("||||||Ratings: " + "IMDb: " + response.data.Ratings[0].Value + " |" + "Rotten: " + response.data.Ratings.map(getRotten) + " |" + "MetaCritic: " + response.data.Ratings[2].Value);
             console.log("||||||Plot: " + response.data.Plot);
             console.log("||||||Country: " + response.data.Country);
             console.log("||||||Language: " + response.data.Language)
@@ -91,7 +97,7 @@ function movieFunction(movieTitle) {
 function concertFunction(artistSearch) {
 
     if (!artistSearch) {
-        artistSearch = "Durand Jones"
+        artistSearch = "Culture Abuse"
     }
 
     var queryUrl = "https://rest.bandsintown.com/artists/" + artistSearch + "/events?app_id=codingbootcamp"
@@ -102,8 +108,8 @@ function concertFunction(artistSearch) {
                 for (var i = 0; i < response.data.length; i++) {
                     console.log("---------------------------------------");
                     console.log("Venue: " + response.data[i].venue.name);
-                    console.log("City: " + response.data[i].venue.city);
-                    console.log("When: " + moment(response.data[i].datetime).format("MM/DD/YYYY"));
+                    console.log("City: " + response.data[i].venue.city + ", " + (response.data[i].venue.region || response.data[i].venue.country));
+                    console.log("When: " + moment(response.data[i].datetime).format("LLLL"));
                     console.log("---------------------------------------");
                 }
             }
@@ -120,10 +126,11 @@ function spotifyFunction(songTitle) {
         songTitle = "PPAP"
     }
 
-    spotify.search({ type: 'track', query: songTitle }, function (err, response) {
+    spotify.search({ type: 'track', query: songTitle, limit: 10 }, function (err, response) {
         if (err) {
             return console.log('Error occurred: ' + err);
         }
+
 
         for (var i = 0; i < response.tracks.items.length; i++) {
             console.log("-------------------------------------")
@@ -132,8 +139,23 @@ function spotifyFunction(songTitle) {
             console.log("Song: " + response.tracks.items[i].name);
             console.log("URL: " + response.tracks.items[i].preview_url);
             console.log("Album: " + response.tracks.items[i].album.name);
-            console.log("======================================")
+            console.log("======================================");
+
+            var logText = "-------------------------------------\n" +
+                "Artist: " + response.tracks.items[i].artists[0].name + "\n" +
+                "-------------------------------------\n" +
+                "Song: " + response.tracks.items[i].name + "\n" +
+                "URL: " + response.tracks.items[i].preview_url + "\n" +
+                "Album: " + response.tracks.items[i].album.name + "\n"
+                + "======================================\n"
+
+            fs.appendFile("log.txt", logText, function (err) {
+
+
+            });
         }
+
+
     });
 };
 
