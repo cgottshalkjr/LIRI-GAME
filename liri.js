@@ -172,7 +172,12 @@ function spotifyFunction(songTitle) {
             console.log("Artist: " + response.tracks.items[i].artists[0].name);
             console.log("-------------------------------------");
             console.log("Song: " + response.tracks.items[i].name);
-            console.log("URL: " + response.tracks.items[i].preview_url || "NO PREVIEW FOR YOU!!!");
+            // console.log("URL: " + response.tracks.items[i].preview_url || "NO PREVIEW FOR YOU!!!");
+            if (response.tracks.items[i].preview_url === null) {
+                console.log("NO PREVIEW FOR YOU!!!!")
+            }else {
+                console.log("URL: " + response.tracks.items[i].preview_url);
+            }
             console.log("Album: " + response.tracks.items[i].album.name);
             console.log("======================================");
 
