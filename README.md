@@ -2,9 +2,31 @@
 ---
 >Created by **Christopher Gottshalk**
 ---
-**LIRI-GAME** is an node based app where everything happens on the command line in terminal. There are multiples node packages being installed in this app. AXIOS, SPOTIFY, MOMENT. 
+**LIRI-GAME** is a node based app where everything happens on the command line in terminal. There are multiples node packages being installed in this app. AXIOS, SPOTIFY, MOMENT. 
  LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a _Language_ Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.
+ ---
 
+ ### INSTALL
+ ```
+ There are already packages in the dependencies of package.json
+ so you will need too only **npm install** before you begin in the cloned folder
+ ```
+
+### RETRIEVE DATA
+
+```
+ To retrieve the data that will power this app, you'll need to send requests using the `axios` package to the Bands in Town, Spotify and OMDB APIs. You'll find these Node packages crucial to run this app.
+
+ * [Node-Spotify-API](https://www.npmjs.com/package/node-spotify-api)
+
+   * [Axios](https://www.npmjs.com/package/axios)
+
+     * You'll use Axios to grab data from the [OMDB API](http://www.omdbapi.com) and the [Bands In Town API](http://www.artists.bandsintown.com/bandsintown-api)
+
+   * [Moment](https://www.npmjs.com/package/moment)
+
+   * [DotEnv](https://www.npmjs.com/package/doten
+   ```
 
 ### INSTRUCTIONS 
 ---
@@ -46,3 +68,6 @@
 * OMDB
 * Git
 * GitHub
+
+
+[I'm an inline-style link](https://cgottshalkjr.github.io/NewPortfolio/)

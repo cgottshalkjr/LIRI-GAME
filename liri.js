@@ -8,7 +8,7 @@ var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
 // var inquirer = require("inquirer");
 
-//setting commands we will use to variables on spots 2 and 3 after node liri.js
+//setting commands we will use two variables on spots 2 and 3 after node liri.js
 var userCommand = process.argv[2];
 var userRequest = process.argv.slice(3).join(" ");
 
@@ -60,40 +60,45 @@ function movieFunction(movieTitle) {
 
     axios.get(queryUrl)
         .then(function (response) {
-            console.log("-------------*MOVIE--INFO*-------------")
-            console.log("---------------------------------------");
-            console.log("Title: " + response.data.Title);
-            console.log("---------------------------------------");
-            console.log("||||||Directed By: " + response.data.Director);
-            console.log("||||||Starring: " + response.data.Actors);
-            console.log("||||||Release Year: " + response.data.Year);
-            response.data.Ratings.map(getRotten);
-            console.log("||||||IMDb: " + response.data.Ratings[0].Value);
-            console.log("||||||Plot: " + response.data.Plot);
-            console.log("||||||Country: " + response.data.Country);
-            console.log("||||||Language: " + response.data.Language)
-            console.log("===========================================");
 
-            var logText = "-------------*MOVIE--INFO*-------------\n" +
-                "-------------------------------------\n" +
-                "Title: " + response.data.Title + "\n" +
-                "-------------------------------------\n" +
-                "Directed By: " + response.data.Director + "\n" +
-                "Starring: " + response.data.Actors + "\n" +
-                "Release Year: " + response.data.Year + "\n" +
-                "||||||IMDb: " + response.data.Ratings[0].Value + "\n" + "||||||Plot: " + response.data.Plot + "\n" + "||||||Country: " + response.data.Country + "\n" + "||||||Language: " + response.data.Language + "\n"
-                + "======================================\n"
+            if (response.data.Title === undefined) {
+                return console.log("ENTER IN A REAL GOD DANG MOVIE KAT OR SHELBO, STOP TRYING TO BREAK MY GAME AND TEST MY ERRORS!!!!");
+            } else {
+                console.log("-------------*MOVIE--INFO*-------------")
+                console.log("---------------------------------------");
+                console.log("Title: " + response.data.Title);
+                console.log("---------------------------------------");
+                console.log("||||||Directed By: " + (response.data.Director || "NO INFO"));
+                console.log("||||||Starring: " + (response.data.Actors || "NO INFO"));
+                console.log("||||||Release Year: " + (response.data.Year || "NO INFO"));
+                response.data.Ratings.map(getRotten);
+                console.log("||||||IMDb: " + (response.data.Ratings[0].Value || "NO INFO"));
+                console.log("||||||Plot: " + (response.data.Plot || "NO INFO"));
+                console.log("||||||Country: " + (response.data.Country || "NO INFO"));
+                console.log("||||||Language: " + (response.data.Language || "NO INFO"))
+                console.log("===========================================");
 
-            fs.appendFile("log.txt", logText, function (err) {
-                if (err) {
-                    return console.log('Error occurred: ' + err);
-                }
+                var logText = "-------------*MOVIE--INFO*-------------\n" +
+                    "-------------------------------------\n" +
+                    "Title: " + response.data.Title + "\n" +
+                    "-------------------------------------\n" +
+                    "Directed By: " + response.data.Director + "\n" +
+                    "Starring: " + response.data.Actors + "\n" +
+                    "Release Year: " + response.data.Year + "\n" +
+                    "||||||IMDb: " + response.data.Ratings[0].Value + "\n" + "||||||Plot: " + response.data.Plot + "\n" + "||||||Country: " + response.data.Country + "\n" + "||||||Language: " + response.data.Language + "\n"
+                    + "======================================\n"
 
-            });
+                fs.appendFile("log.txt", logText, function (err) {
+                    if (err) {
+                        return console.log('Error occurred: ' + err);
+                    }
+                });
+            }
         })
         .catch(function (error) {
             if (error.response) {
-
+                // The request was made and the server responded with a status code
+                // that falls out of the range of 2xx
                 console.log("---------------Data---------------");
                 console.log(error.response.data);
                 console.log("---------------Status---------------");
@@ -101,14 +106,16 @@ function movieFunction(movieTitle) {
                 console.log("---------------Status---------------");
                 console.log(error.response.headers);
             } else if (error.request) {
-
+                // The request was made but no response was received
+                // `error.request` is an object that comes back with details pertaining to the error that occurred.
                 console.log(error.request);
-            } else {
-
+            }
+            else {
+                // Something happened in setting up the request that triggered an Error
                 console.log("Error", error.message);
             }
             console.log(error.config);
-        })
+        });
 }
 //End of movieFunction
 
@@ -142,11 +149,9 @@ function concertFunction(artistSearch) {
                         if (err) {
                             return console.log('Error occurred: ' + err);
                         }
-
                     });
                 }
-            }
-            else {
+            } else {
                 console.log("No shows coming up")
             }
         })
@@ -175,7 +180,7 @@ function spotifyFunction(songTitle) {
             // console.log("URL: " + response.tracks.items[i].preview_url || "NO PREVIEW FOR YOU!!!");
             if (response.tracks.items[i].preview_url === null) {
                 console.log("NO PREVIEW FOR YOU!!!!")
-            }else {
+            } else {
                 console.log("URL: " + response.tracks.items[i].preview_url);
             }
             console.log("Album: " + response.tracks.items[i].album.name);
